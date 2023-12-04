@@ -1,0 +1,370 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	background: black;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Light.eot');
+    src: local('Gilroy Light'), local('Gilroy-Light'),
+        url('../font/Gilroy-Light.eot') format('embedded-opentype'),
+        url('../font/Gilroy-Light.woff2') format('woff2'),
+        url('../font/Gilroy-Light.woff') format('woff'),
+        url('../font/Gilroy-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RoadRadio';
+    src: url('RoadRadio.eot');
+    src: local('RoadRadio'),
+        url('../font/RoadRadio.eot?#iefix') format('embedded-opentype'),
+        url('../font/RoadRadio.woff2') format('woff2'),
+        url('../font/RoadRadio.woff') format('woff'),
+        url('../font/RoadRadio.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RoadRadio-Bold';
+    src: url('RoadRadio-Bold.eot');
+    src: local('RoadRadio Bold'), local('RoadRadio-Bold'),
+        url('../font/RoadRadio-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/RoadRadio-Bold.woff2') format('woff2'),
+        url('../font/RoadRadio-Bold.woff') format('woff'),
+        url('../font/RoadRadio-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+.WeHelp__block
+{
+	position: relative;
+	background: url(../img/WeHelp__block-Image1Group1.png)0 77px /591px 614px no-repeat,
+	url(../img/WeHelp__block-Image2Group1.png)0 763px /591px 425px no-repeat,
+	url(../img/WeHelp__block-Image1Group2.png)663px -10px/651px 425px no-repeat,
+	url(../img/WeHelp__block-Image2Group2.png)663px 463px /651px 490px no-repeat,
+	url(../img/WeHelp__block-Image3Group2.png)663px 1001px /651px 328px no-repeat,
+	url(../img/WeHelp__block-Image1Group3.png)1420px 0px /594px 336px no-repeat,
+	url(../img/WeHelp__block-Image2Group3.png)1420px 462px /594px 448px no-repeat,
+	url(../img/WeHelp__block-Image3Group3.png)1420px 1001px /594px 447px no-repeat;
+	height: 1504px;
+	z-index: 1px;
+	
+	max-height: 1504px;
+}
+.header {
+	color: #ffffff;
+	position:relative;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+/* .header::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+} */
+.container {
+}
+.header__body {
+
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	height: 75.47px;
+	margin: 35px 35px 0px 65px;
+}
+.header__items {
+	width: 540px;
+	display: flex;
+	align-items: center;
+	height: 44px;
+	font-family: "Gilroy";
+}
+.header__items_items {
+	display: flex;
+	
+}
+.header__items_items li{
+	text-decoration: none;
+	position: relative;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 21.19px;
+	margin: 0 35px 0 0;
+}
+.header__items_items a{
+	
+	color: #fff;
+	
+}
+.header__items_items a:hover{
+	
+	color: #FDDD0A;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	transition: 0.1s;
+}
+.header__items_items li::before{
+	position:absolute;
+	bottom: -10px;
+	content: " ";
+	border-bottom: 1px solid #FDDD0A;
+	transform: scale(0,1);
+	width:100%;
+	transition: transform 0.3s
+}
+.header__items_items li:hover::before{
+	transform: scale(1,1);
+}
+.header__items_items li:nth-child(3)::after
+{
+	content: "";
+	width: 7.46px;
+	height: 7.46px;
+	padding: 0 6px;
+	position: relative;
+	left: 4px;
+  	top: 5px;
+	background: url("../img/Icons/WeHelp__Header\(Expertise\)Arrow_icon.png")repeat-x top left; 
+
+}
+
+.header__items_items li:nth-child(3):hover::after
+{
+	
+}
+.header__items_items li:nth-child(3):active::after,
+.header__menu
+{
+	display:flex;
+	background: #FCFCFC;
+	width: 200px;
+	height: 100px;
+}
+
+
+.header__items_items:last-child::after
+{
+	content: "HOT";
+	font-family: "Gilroy";
+	font-weight: 600;
+	font-size: 12px;
+	padding: 0 3px;
+	height: 16px;
+	line-height: 14.32px;
+	position: relative;
+	left: -37px;
+	background-color: #FDDD0A;
+  	top: -5px;
+	color: black;
+}
+
+.header__menu {
+	background-color: black;
+	width: 236px;
+	height: 368px;
+	display: none;
+}
+.header__List {
+
+
+}
+.header__List li{
+	margin-bottom: 20px;
+}
+.header__link {
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 21.19px;
+	font-weight: 500;
+	font-family: "Gilroy";
+}
+
+
+
+
+.makeOrder_Button {
+	color: #FDDD0A;
+	font-family: "RoadRadio";
+	font-weight: 400;
+	border: 1px solid #FDDD0A;
+	padding: 10px 20px;
+	font-size: 17px;
+}
+.makeOrder_Button::after 
+{
+	content: "";
+	width: 9px;
+	height: 9px;
+	padding: 0 5.5px;
+	position: relative;
+	left: 8px;
+  	top: 5px;
+	background: url("../img/Icons/HeaderArrow.png")repeat-x top left; 
+}
+
+
+.headerMainMenu a{
+	color: white;
+	font-family: "RoadRadio";
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 18px;
+}
+
+.hamburger {
+	top: 6px;
+	left:-40px;
+	width: 30px;
+	height: 2px;
+	background: #FCFCFC;
+	position: relative;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	transition: 1.1s;
+}
+  
+  
+.hamburger:after {
+	top: 8px;
+}
+.mainMenu:after {
+	content: '';
+	position:absolute;
+	width: 17px;
+	height: 2px;
+	background:#FCFCFC;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+	transition:0.5s;
+}
+.hamburger a:hover{
+	>.mainMenu:hover::after{
+		width: 30px;
+	} 
+}
+	
+
+.mainMenu:hover::after{
+	width: 30px;
+} 
+
+.WeHelp__block_titlewithrightElement {
+	margin-top: 0px;
+	display: flex;
+	max-height: 604px;
+	position: relative;
+	left: 295px;
+	font-family: "RoadRadio";
+}
+.WeHelp__block_title {
+	display: flex;
+	flex-direction: column;
+	max-width: 1062px;
+	width: 1062px;
+	flex: 1 1 auto;
+}
+.WeHelp__block_title1 {
+	display: flex;
+	justify-content: space-between;
+	color: #FDDD0A;
+	font-weight: 700;
+	font-size: 24px;
+	padding: 0 0 0 100px;
+	
+}
+.WeHelp__block_title2 p{
+	font-weight: 1900;
+	font-size: 140px;
+	line-height: 140px;
+	display: flex;
+	justify-content:center;
+	color: transparent;
+	z-index: 2;display: block;
+	padding: 0 0 0 240px;
+    -webkit-text-stroke: 0.1px rgb(255, 255, 255);
+ 
+}
+.shape {
+	height: 237px;
+    width: 237px;
+	display: block;
+	position: absolute;
+	top: 60px;
+	right: 990px;
+    background-color: #FDDD0A;
+    border-radius: 50%;
+	z-index: 1;
+}
+.WeHelp__block_title3 {
+	color: #fff;
+	font-weight: 900;
+	font-size: 140px;
+	line-height: 140px;
+	padding: 0 0 0 100px;
+}
+.WeHelp__block_title4 {
+	font-weight: 900;
+	font-size: 140px;
+	line-height: 140px;
+	color: #fff;
+	padding: 0 0 0 250px;
+}
+.WeHelp__block_title5 {
+	font-weight: 1900;
+	font-size: 140px;
+	line-height: 140px;
+	color: transparent;
+
+    -webkit-text-stroke: 0.1px rgb(255, 255, 255);
+}
+.WeHelp__block_rightElement {
+	display: flex;
+	align-items: center;
+	padding: 0 0 0 220px;
+
+}
+/* обводка текста */
+::-moz-selection { background: #FDDD0A; color: #fff; text-shadow: none; }
+     ::selection { background: #FDDD0A; color: #fff; text-shadow: none; }
